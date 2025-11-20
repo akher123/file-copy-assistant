@@ -1,0 +1,86 @@
+﻿File Copy Assistant - User Guide
+
+Introduction
+----------------------------------
+The File Copy Assistant is a Windows desktop application that allows users to copy files from a source folder to a destination folder based on a list provided in an Excel file. It also supports organizing copied files into subfolders as specified in another Excel column.
+
+Features
+----------------------------------
+Select a source folder containing the files.
+
+Select an Excel file that lists the files to be copied.
+
+Select a destination folder where the files will be copied.
+
+Automatically organize copied files into subfolders based on the Excel file.
+
+Display progress using a progress bar.
+
+System Requirements
+-------------------------------------
+Windows 10 or later
+.NET Framework 4.7.2 or later
+
+Excel file (.xlsx or .xls) containing file names
+
+Installation
+-------------------------------------
+Download and install the application.
+
+Ensure that EPPlus is installed if running from source code.
+
+How to Use
+--------------------------------------
+Step 1: Select Source Folder
+
+Click the "Browse" button next to the Source Folder field.
+
+Select the folder where the files to be copied are stored.
+
+Step 2: Select Excel File
+
+Click the "Browse" button next to the Excel File field.
+
+Select an Excel file (.xlsx or .xls) that contains the file names.
+
+Step 3: Select Destination Folder
+
+Click the "Browse" button next to the Destination Folder field.
+
+Select the folder where files will be copied.
+
+Step 4: Start Copying
+
+Click the "Copy Files" button.
+
+The application reads the file names from the first column of the Excel file.
+
+It reads the second column to determine the subfolder inside the destination folder.
+
+The progress bar updates as files are copied.
+
+A success message is displayed upon completion.
+
+Excel File Format
+---------------------------------------------
+The Excel file should be formatted as follows:
+
+File Name     Subfolder Name
+
+document.pdf  Reports
+
+image.jpg     Images
+
+data.xlsx     Data
+
+Error Handling
+---------------------------------------------
+If a file is not found in the source folder, it is skipped.
+
+If an Excel file is not selected or is empty, an error message appears.
+
+If any other issue occurs, an error message will be displayed.
+
+Support
+
+For any issues or feature requests, please contact akher@dependablesolutions.com.
